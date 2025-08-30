@@ -454,12 +454,394 @@ font-size: 65px;
     height: auto;
   }
 
-  @media (max-width: 768px) {
-    /* CSS styles for mobile go here */
-    body {
-      display: none;
-    }
-  
-    
+ /* =========================
+   Mobile / Tablet Responsive
+   ========================= */
+
+/* Tablets and smaller */
+@media (max-width: 768px) {
+  .sec-nav {
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    position: relative;
   }
-  
+
+  .sec-nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .li-name {
+    margin-right: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hire-me {
+    margin-left: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  #home {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .info-name {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .name-div h1 {
+    font-size: 24px;
+  }
+
+  .name-div p {
+    font-size: 36px;
+  }
+
+  .image {
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .image img {
+    width: 260px;
+    height: 260px;
+    margin: 0;
+  }
+
+  #btn-div {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto 0;
+    font-size: 10px;
+  }
+
+  .stack-div {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px;
+    text-align: center;
+  }
+
+  .about-image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .about-image h1 {
+    font-size: 36px;
+    width: auto;
+    margin: 20px 0 0;
+    padding: 0;
+    line-height: 1.2;
+  }
+
+  .about-image span {
+    margin: 20px auto 0;
+    transform: rotate(0deg);
+  }
+
+  .about p {
+    width: 100%;
+    margin: 20px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .myskills {
+    margin: 40px 20px;
+  }
+
+  .myskills h1 {
+    font-size: 36px;
+    width: auto;
+    margin: 0 0 20px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .myskills div {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .progress {
+    width: 100%;
+  }
+
+  .contact-footer {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .contact-footer h3,
+  .contact-footer p,
+  .social-links {
+    margin-left: 0;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+
+
+/* =========================
+   Futuristic Mobile Styles
+   ========================= */
+
+/* Tablets & below */
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(135deg, oklch(0.129 0.042 264.695), oklch(0.147 0.004 49.25), oklch(0.527 0.154 150.069));
+    background-attachment: fixed;
+  }
+
+  /* Glassmorphic nav */
+  .sec-nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 0 20px rgba(51,135,196,0.5);
+    position: relative;
+  }
+
+  .sec-nav ul {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .li-name {
+    font-size: 20px;
+    text-shadow: 0 0 10px cyan, 0 0 20px #f6339a;
+  }
+
+  .hire-me {
+    margin-left: 0;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px 3px #f6339a, 0 0 30px #f6339a inset;
+  }
+
+  /* Futuristic hero section */
+  #home {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .name-div h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 0 15px cyan, 0 0 30px #f6339a;
+  }
+
+  .name-div p {
+    font-size: 42px;
+    letter-spacing: 3px;
+    color: #f6339a;
+    text-shadow: 0 0 10px #f6339a, 0 0 25px cyan;
+  }
+
+  .image {
+    width: 260px;
+    height: 260px;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px cyan, 0 0 40px #f6339a;
+  }
+
+  .image img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  #btn-div {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #f6339a;
+    margin: 20px auto 0;
+    box-shadow: 0 0 20px #f6339a, 0 0 40px cyan;
+    transition: 0.3s;
+  }
+  #btn-div:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px cyan, 0 0 50px #f6339a;
+  }
+
+  /* Futuristic about section */
+  .about {
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 20px;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px cyan, 0 0 40px #f6339a;
+  }
+
+  .about-image h1 {
+    font-size: 32px;
+    text-shadow: 0 0 20px cyan, 0 0 40px #f6339a;
+  }
+
+  .about p {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 24px;
+    max-width: 90%;
+    color: rgba(255,255,255,0.85);
+  }
+
+  /* Futuristic skills */
+  .myskills {
+    margin: 40px 20px;
+    text-align: center;
+  }
+
+  .myskills h1 {
+    font-size: 34px;
+    text-shadow: 0 0 20px cyan, 0 0 40px #f6339a;
+  }
+
+  .myskills div {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .progress {
+    width: 100%;
+    height: 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(51,135,196,0.6);
+  }
+
+  .progress div {
+    border-radius: 5px;
+    animation: glowBar 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes glowBar {
+    from { filter: drop-shadow(0 0 5px cyan); }
+    to { filter: drop-shadow(0 0 20px #f6339a); }
+  }
+
+  /* Futuristic footer */
+  .contact-footer {
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .contact-footer h3 {
+    font-size: 22px;
+    text-shadow: 0 0 15px cyan, 0 0 25px #f6339a;
+  }
+
+  .contact-footer p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .social-links img {
+    width: 30px;
+    filter: drop-shadow(0 0 10px cyan);
+    transition: 0.3s;
+  }
+
+  .social-links img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 20px #f6339a);
+  }
+}
+
+/* Phones only */
+@media (max-width: 480px) {
+  .name-div h1 {
+    font-size: 22px;
+  }
+
+  .name-div p {
+    font-size: 28px;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .myskills h1,
+  .about-image h1 {
+    font-size: 26px;
+  }
+}
+
